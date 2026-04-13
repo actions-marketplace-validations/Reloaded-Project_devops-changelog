@@ -331,7 +331,7 @@ runs:
         path: ${{ inputs.output }}
 
     - name: Upload Changelog to GitHub Release
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@v3
       if: ${{ inputs.upload-release == 'true' }}
       with:
         body_path: ${{ inputs.output }}
