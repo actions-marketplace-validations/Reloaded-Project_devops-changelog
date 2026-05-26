@@ -87,7 +87,7 @@ jobs:
           auto-checkout: false
           upload-artifact: true
       - name: Download Artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: Changelog
       - name: Assert Downloaded Artifact Not Empty
@@ -112,7 +112,7 @@ jobs:
           upload-artifact: true
           artifact-name: Custom_Changelog
       - name: Download Custom Artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: Custom_Changelog
       - name: Assert Downloaded Custom Artifact Not Empty
